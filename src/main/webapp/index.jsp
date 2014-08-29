@@ -21,6 +21,13 @@
     <ul>
     	<li><a href="webapi/api-docs">Get Swagger Description of API</a> (/webapi/api-docs : /api-docs on the path that resources are bound to)
 	</ul>
+
+	<hr>
+    
+    <h2>4. Added Swagger UI for viewing Swagger Description" </h2>
+    <ul>
+    	<li><a href="swaggerUI/index.html">Link to Swagger UI</a> (packaged in the application, in webapp/swaggerUI/)
+	</ul>
    
 </body>
 </html>
