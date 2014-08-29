@@ -45,10 +45,25 @@
             <!-- artifactId>jersey-container-servlet</artifactId -->
         </dependency>
 
+        <!--  Enable JSOn support in Jersey based implementation -->
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
+        
+        <!--  Add dependency for Swagger -->
+		<dependency>
+			<groupId>com.wordnik</groupId>
+			<artifactId>swagger-jersey2-jaxrs_2.10</artifactId>
+			<scope>compile</scope>
+			<version>1.3.7</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.ws.rs</groupId>
+					<artifactId>jsr311-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
         
     </dependencies>
     <properties>

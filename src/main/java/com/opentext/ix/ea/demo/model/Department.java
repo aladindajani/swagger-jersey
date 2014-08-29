@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 import javax.xml.bind.annotation.*;
 
+import com.wordnik.swagger.annotations.ApiModelProperty;
+
 
 
 @XmlRootElement(name = "Department")
@@ -44,7 +46,7 @@ public class Department {
 
 
   @XmlElement(name = "status")
-//  @ApiModelProperty(value = "Department status", allowableValues = "active,inactive,pending")
+  @ApiModelProperty(value = "Department status", allowableValues = "active,inactive,pending")
   public String getStatus() {
     return status;
   }

@@ -1,11 +1,23 @@
 package com.opentext.ix.ea.demo.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "ErrorResponse")
 public class ErrorResponse {
 	
+	@XmlElement
 	private String errorInstanceId;
+	
+	@XmlElement
 	private String errorCode;
+	
+	@XmlElement
 	private String errorMessage;
+	
+	@XmlElement
 	private String errorAdditionalDescription;
+	
 	public String getErrorInstanceId() {
 		return errorInstanceId;
 	}
